@@ -10,22 +10,9 @@
 </script>
 
 <script>
-    import { pages } from "../stores";
+    import Page from "../components/Page.svelte";
 
     export let slug;
-
-    $: page = Object.entries($pages).reduce((acc, [id, value]) => {
-        if (value.path === `/${slug}`) {
-            return { ...value, id };
-        } else {
-            return acc;
-        }
-    });
-
-    $: page = Object.entries($pages).reduce((acc, [id, value]) => {
-        return value.path === `/${slug}` ? { ...value, id } : acc;
-    }, {});
-    
 </script>
 
-{page.name}
+<Page {slug} />
