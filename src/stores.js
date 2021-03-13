@@ -1,5 +1,4 @@
 import { writable, derived } from "svelte/store";
-// import { filterObject } from "./utils/filterObject";
 
 export const website = writable({});
 
@@ -11,13 +10,9 @@ export const NAV_HOMEPAGE_TYPE = "Homepage";
 export const NAV_GROUP_ROOT = "ROOT";
 export const NAV_GROUP_HIDDEN = "HIDDEN";
 
-export const components = derived(website, w => w.components);
+export const pages = derived(website, w => w.pages);
 export const blocks = derived(website, w => w.blocks);
-// export const pages = derived(website, w => w.pages);
-export const pages = derived(website, w => {
-  console.log(w.pages);
-  return w.pages;
-});
+export const components = derived(website, w => w.components);
 
 export const blogCategories = derived(website, w => w.blogCategories);
 export const domain = derived(website, w => w.domain);

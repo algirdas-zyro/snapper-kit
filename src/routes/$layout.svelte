@@ -1,10 +1,7 @@
 <script context="module">
-    // import fetch from 'cross-fetch';
     import { setWebsite } from "../stores";
 
-    // export async function load({ fetch }) {
     export async function load(ctx) {
-        // const res = await fetch("./data.json");
         const res = await ctx.fetch("./data.json");
         const websiteData = await res.json();
 
@@ -13,16 +10,19 @@
 </script>
 
 <script>
-    import { navItems } from "../stores";
+    import Ribbon from "../components/Ribbon.svelte";
+    import Nav from "../components/Nav.svelte";
+    import { styles } from "../stores";
+    import { cssVarsObjectToString } from "../utils/objectToCSSVars";
+
+    $: computedStyle = cssVarsObjectToString($styles);
 </script>
 
-<main>
-    <nav>
-        {#each $navItems as item}
-            <li>
-                <a href={item.path}>{item.name}</a>
-            </li>
-        {/each}
-    </nav>
+<div style={computedStyle}>
+    <!-- observer?.. -->
+    <header class="preview__sticky">
+        <Ribbon />
+        <Nav />
+    </header>
     <slot />
-</main>
+</div>

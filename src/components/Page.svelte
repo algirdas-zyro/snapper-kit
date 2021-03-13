@@ -1,5 +1,6 @@
 <script>
-    import { pages, blocks, components } from "../stores";
+    import { pages, blocks, components, styles } from "../stores";
+    import { cssVarsObjectToString } from "../utils/objectToCSSVars";
 
     export let slug;
 
@@ -23,4 +24,13 @@
         );
 </script>
 
-<div>{page.name}</div>
+<!--
+    <svelte:head>
+    <link
+        rel="stylesheet"
+        href="https://raw.githack.com/bradtraversy/svelte-scoreboard/master/public/global.css"
+    />
+</svelte:head>
+-->
+
+<main>{page.name}</main>
