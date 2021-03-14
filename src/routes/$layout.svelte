@@ -31,10 +31,10 @@
 </script>
 
 <svelte:head>
-    <link rel="preconnect" href='//fonts.gstatic.com' crossorigin>
-    <link rel="preconnect" href='//assets.zyrosite.com' crossorigin>
-    <link rel="preload" as="style" href={googleFontHref}>
-    <link rel="stylesheet" href={googleFontHref} media="print" onload="if(!window._isAppPrerendering)this.onload=null;this.removeAttribute('media')">
+    <!-- <link rel="preconnect" href='//fonts.gstatic.com' crossorigin> -->
+    <!-- <link rel="preconnect" href='//assets.zyrosite.com' crossorigin> -->
+    <!-- <link rel="preload" as="style" href={googleFontHref}> -->
+    <!-- <link rel="stylesheet" href={googleFontHref} media="print" onload="if(!window._isAppPrerendering)this.onload=null;this.removeAttribute('media')"> -->
 </svelte:head>
 
 <div style={computedStyle}>
