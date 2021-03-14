@@ -11,7 +11,7 @@
 
 <script>
     import Ribbon from "../components/Ribbon.svelte";
-    import Nav from "../components/Nav.svelte";
+    import BlockNav from "../components/BlockNav.svelte";
     import { styles } from "../stores";
     import { cssVarsObjectToString } from "../utils/objectToCSSVars";
 
@@ -19,10 +19,10 @@
 </script>
 
 <div style={computedStyle}>
-    <!-- observer?.. -->
+    <!-- add mobile observer -->
     <header class="preview__sticky">
         <Ribbon />
-        <Nav />
+        <BlockNav />
     </header>
     <slot />
 </div>
