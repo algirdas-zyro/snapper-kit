@@ -1,12 +1,9 @@
 <script context="module">
-    export async function load(ctx) {
-        let { slug } = ctx.page.params;
-        return {
-            props: {
-                slug,
-            },
-        };
-    }
+    export const load = async (ctx) => ({
+        props: {
+            slug: ctx.page.params.slug,
+        },
+    })
 </script>
 
 <script>

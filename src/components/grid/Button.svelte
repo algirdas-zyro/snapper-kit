@@ -1,19 +1,18 @@
 <script>
-    export let data;
+    export let component;
 
-    $: settings = data.settings;
+    $: settings = component.settings;
     $: buttonClass = `block-grid-item__component grid-button grid-button--${settings.type}`
-    $: isFormButton = settings?.isFormButton ?? false;
     $: href = settings?.href ?? '/';
     $: target = settings?.target;
 </script>
 
-{#if isFormButton}
+{#if settings?.isFormButton}
 <button class={buttonClass} type="submit">
-    {data.content}
+    {component.content}
 </button>
 {:else}
 <a class={buttonClass} {href} {target}>
-    {data.content}
+    {component.content}
 </a>
 {/if}

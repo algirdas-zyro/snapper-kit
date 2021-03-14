@@ -527,8 +527,8 @@
 			"m-font-size": "14px"
 		},
 		"font": {
-			"primary": "'Montserrat', sans-serif",
-			"secondary": "'Cinzel', serif"
+			"primary": "Montserrat, sans-serif",
+			"secondary": "Cinzel, serif"
 		},
 		"colors": {
 			"dark": "#2e2e2e",

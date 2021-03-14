@@ -1,0 +1,2 @@
+export const USER_MOBILE_BREAKPOINT = 920;
+export const IPHONE_PREVIEW_HEIGHT = 667;

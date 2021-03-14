@@ -1,6 +1,7 @@
 <script>
     import { pages, blocks, components, styles } from "../stores";
     import { cssVarsObjectToString } from "../utils/objectToCSSVars";
+    import { getGridItemSize } from "../utils/getGridItemSize";
     import Grid from "./Grid.svelte";
 
     export let slug;
@@ -24,6 +25,8 @@
                     components: $blocks[blockId].components.map(
                         componentId => ({
                             id: componentId,
+                            // this returns { width, height }:
+                            ...getGridItemSize($blocks[blockId], $components[componentId]?.settings?.styles?.position),
                             ...$components[componentId],
                         })
                     ),
