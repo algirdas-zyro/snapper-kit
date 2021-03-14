@@ -11,9 +11,11 @@ module.exports = {
 		// You can create optimized builds for different platforms by
 		// specifying a different adapter
 		// adapter: '@sveltejs/adapter-node',
-		adapter: '@sveltejs/adapter-static',
+		// adapter: '@sveltejs/adapter-static',
+		// adapter: '@sveltejs/adapter-vercel',
+		adapter: '@sveltejs/adapter-netlify',
 
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		// hydrate the <div id="app"> element in src/app.html
+		target: '#app'
 	}
 };
