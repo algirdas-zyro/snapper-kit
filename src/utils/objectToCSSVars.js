@@ -26,7 +26,10 @@ export const objectToCSSVars = (object, previousKey = "") =>
         };
   }, {});
 
-export const cssVarsObjectToString = styleObject =>
-  Object.entries(objectToCSSVars(styleObject)).reduce((acc, [key, value]) => {
-    return (acc += `${key}:${value};`);
-  }, "");
+export const cssVarsObjectToString = styleObject => {
+  if (Object.prototype.toString.call(styleObject) === "[object Object]") {
+    return Object.entries(objectToCSSVars(styleObject)).reduce((acc, [key, value]) => {
+      return (acc += `${key}:${value};`);
+    }, "");
+  }
+};

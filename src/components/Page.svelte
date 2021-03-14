@@ -33,4 +33,14 @@
 </svelte:head>
 -->
 
-<main>{page.name}</main>
+<main>
+
+
+
+    {#each page?.blocks as block, i}
+    <li>
+        {console.log(block)}
+    </li>
+    {/each}
+
+</main>

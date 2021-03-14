@@ -32,11 +32,12 @@
     const isMobileScreen = false;
 
     $: navItems = $nav?.itemsIds?.map(mapNavItem) ?? [];
-    $: navSettings = $blocks?.navigation?.settings;
+    $: navSettings = $blocks?.navigation?.settings ?? {};
     $: isOpen = true;
     $: logoUrl = navSettings?.logoUrl;
     $: showLogo = navSettings?.showLogo;
     $: isSticky = navSettings?.isSticky;
+    $: isTransparent = navSettings?.isTransparent;
     $: logoPlacement = isMobileScreen
         ? navSettings["m-logoPlacement"] || navSettings.logoPlacement
         : navSettings.logoPlacement;
@@ -51,18 +52,18 @@
         ? "var(--space-between-menu) 0"
         : "0 var(--space-between-menu)";
     $: templateColumns = isMobileScreen
-        ? logoMenuPositionMap[placementKey].mTemplateColumns ||
-          logoMenuPositionMap[placementKey].templateColumns
-        : logoMenuPositionMap[placementKey].templateColumns;
+        ? logoMenuPositionMap[placementKey]?.mTemplateColumns ||
+          logoMenuPositionMap[placementKey]?.templateColumns
+        : logoMenuPositionMap[placementKey]?.templateColumns;
     $: styleObject = {
         "navigation-grid-template-columns": showLogo ? templateColumns : "1fr",
-        "logo-grid-row": logoMenuPositionMap[placementKey].logoRow,
-        "logo-grid-column": logoMenuPositionMap[placementKey].logoColumn,
+        "logo-grid-row": logoMenuPositionMap[placementKey]?.logoRow,
+        "logo-grid-column": logoMenuPositionMap[placementKey]?.logoColumn,
         "links-grid-row": showLogo
-            ? logoMenuPositionMap[placementKey].menuRow
+            ? logoMenuPositionMap[placementKey]?.menuRow
             : "1/2",
         "links-grid-column": showLogo
-            ? logoMenuPositionMap[placementKey].menuColumn
+            ? logoMenuPositionMap[placementKey]?.menuColumn
             : "1/2",
         "navigation-grid-gap": showLogo ? gridGap : "",
     };
