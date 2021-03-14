@@ -7,7 +7,6 @@
 - weird recalculation of nav styling
 
 todo:
-- background
 - head
 - ?merge Dom branch and rebuild CSS + navigation
 - socials

@@ -37,14 +37,9 @@
         
 </script>
 
-<!--
-    <svelte:head>
-    <link
-        rel="stylesheet"
-        href="https://raw.githack.com/bradtraversy/svelte-scoreboard/master/public/global.css"
-    />
+<svelte:head>
+    <title>Page title</title>
 </svelte:head>
--->
 
 {#if page?.blocks}
 <main>
