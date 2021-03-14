@@ -21,7 +21,7 @@
                 blocks: page.blocks.map(blockId => ({
                     id: blockId,
                     ...$blocks[blockId],
-                    computedBlockStyle: cssVarsObjectToString($blocks[blockId].settings.styles),
+                    computedStyle: cssVarsObjectToString($blocks[blockId].settings.styles),
                     components: $blocks[blockId].components.map(
                         componentId => ({
                             id: componentId,
@@ -48,9 +48,9 @@
 
 {#if page?.blocks}
 <main>
-    {#each page.blocks as {type, computedBlockStyle, components}, i}
-    <section class="block" style={computedBlockStyle}>
-        <svelte:component this={getComponent(type)} components={components} />
+    {#each page.blocks as block}
+    <section class="block" style={block.computedStyle}>
+        <svelte:component this={getComponent(block.type)} {block} />
     </section>
     {/each}
 </main>

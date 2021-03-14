@@ -3,13 +3,14 @@
 - computeds ($:) are 🔥
 - BlockNavigation is overcomplicated - most of 'styles' is overriden anyway
 - SCSS is not working
-
+- weird nav underline issue
+- weird recalculation of nav styling
 
 todo:
-- gridimage
-- socials
-- ?merge Dom branch and rebuild CSS + navigation
 - background
+- head
+- ?merge Dom branch and rebuild CSS + navigation
+- socials
 
 - updated json structure
 - template switch with window.postMessage

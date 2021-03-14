@@ -1,7 +1,7 @@
 <script>
     export let component;
 
-    $: settings = component.settings;
+    $: settings = component?.settings ?? {};
     $: buttonClass = `block-grid-item__component grid-button grid-button--${settings.type}`
     $: href = settings?.href ?? '/';
     $: target = settings?.target;
