@@ -2,7 +2,8 @@
     import { setWebsite } from "../stores";
 
     export async function load(ctx) {
-        const res = await ctx.fetch("./data.json");
+        // const res = await ctx.fetch("./data.json");
+        const res = await ctx.fetch("./json/perf--images.json");
         const websiteData = await res.json();
 
         setWebsite(websiteData);
