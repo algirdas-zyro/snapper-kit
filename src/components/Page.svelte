@@ -1,13 +1,13 @@
 <script>
     import { pages, blocks, components, styles } from "../stores";
     import { cssVarsObjectToString } from "../utils/objectToCSSVars";
-    import BlockGrid from "./BlockGrid.svelte";
+    import Grid from "./Grid.svelte";
 
     export let slug;
 
     const getComponent = (type) => {
         switch(type) {
-            default: return BlockGrid
+            default: return Grid
         }
     };
 

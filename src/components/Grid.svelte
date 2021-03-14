@@ -1,14 +1,14 @@
 <script>
     import { cssVarsObjectToString } from "../utils/objectToCSSVars";
-    import GridTextBox from "./grid/GridTextBox.svelte";
-    import GridButton from "./grid/GridButton.svelte";
+    import TextBox from "./grid/TextBox.svelte";
+    import Button from "./grid/Button.svelte";
 
     export let components;
 
     const getComponent = (type) => {
         switch(type) {
-            case 'GridButton': return GridButton
-            default: return GridTextBox
+            case 'GridButton': return Button
+            default: return TextBox
         }
     };
 </script>
