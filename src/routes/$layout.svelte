@@ -3,7 +3,6 @@
 
     export async function load(ctx) {
         const res = await ctx.fetch("./data/wells.json");
-        // const res = await ctx.fetch("./data/perf--images.json");
         const websiteData = await res.json();
 
         setWebsite(websiteData);

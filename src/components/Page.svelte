@@ -38,7 +38,7 @@
 </script>
 
 <svelte:head>
-    <title>Page title</title>
+    <title>{page?.name}</title>
 </svelte:head>
 
 {#if page?.blocks}
