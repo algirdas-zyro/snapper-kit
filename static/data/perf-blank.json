@@ -1,0 +1,521 @@
+{
+	"meta": {
+	  "GAId": "-",
+	  "version": 26,
+	  "template": "acacia",
+	  "homepageId": "home",
+	  "isFirstLoad": false,
+	  "ecwidStoreId": "",
+	  "demoEcwidStoreId": "26103239",
+	  "typographyStylesId": "tapia"
+	},
+	"forms": {
+	  "contactForm": {
+		"name": "Contact form",
+		"token": "AzG9Oj3DMyHo4v3qE7aBmeagq2NmkRXy"
+	  },
+	  "subscribeForm": {
+		"name": "Subscribe form",
+		"token": "mjEyzPq54xFp6QN64O21YBMl5Prdkj7Q"
+	  }
+	},
+	"pages": {
+	  "home": {
+		"name": "Home",
+		"path": "/",
+		"type": "default",
+		"blocks": ["gUEQDKCYlm"],
+		"oldPath": "/page-home"
+	  },
+	  "jz-B-RcRx": {
+		"meta": {
+		  "title": "A blog post",
+		  "description": "Blog post description."
+		},
+		"name": "A blog post",
+		"path": "/newBlogPost-jz-B-RcRx",
+		"type": "blog",
+		"blocks": ["jz-B-RcRx-header", "jz-B-RcRx-section"],
+		"customData": {
+		  "date": "2021-02-07T09:20:31.458Z",
+		  "hidden": false,
+		  "categories": [],
+		  "coverImage": {
+			"alt": "aerial view of city buildings during night time",
+			"src": "https://images.unsplash.com/photo-1611008715369-f8037c6fed08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw3MjU4M3wwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=1080"
+		  },
+		  "minutesToRead": "0"
+		}
+	  },
+	  "I3zQQ2kSK1": {
+		"meta": {
+		  "title": "A blog post",
+		  "description": "Blog post description."
+		},
+		"name": "A blog post",
+		"path": "/newBlogPost-I3zQQ2kSK1",
+		"type": "blog",
+		"blocks": ["I3zQQ2kSK1-header", "I3zQQ2kSK1-section"],
+		"customData": {
+		  "date": "2021-02-07T09:20:31.459Z",
+		  "hidden": false,
+		  "categories": [],
+		  "coverImage": {
+			"alt": "man and woman sitting on sidewalk during night time",
+			"src": "https://images.unsplash.com/photo-1610990275491-54fc65bb732f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXw3MjU4M3wwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=1080"
+		  },
+		  "minutesToRead": "0"
+		}
+	  }
+	},
+	"blocks": {
+	  "gUEQDKCYlm": {
+		"type": "BlockGrid",
+		"settings": {
+		  "styles": {
+			"rows": 5,
+			"width": "1224px",
+			"row-gap": "16px",
+			"row-size": "48px",
+			"column-gap": "24px",
+			"grid-width": "1224px",
+			"column-count": "12",
+			"block-padding": "40px 0px",
+			"content-width": "1600px",
+			"content-padding": "16px",
+			"m-block-padding": "40px 16px 40px 16px",
+			"oldContentWidth": "1600px"
+		  }
+		},
+		"zindexes": ["QN4cKMom3v", "W7nRlF2Yia", "YnyoT2qUNr"],
+		"background": { "color": "var(--colors-light)", "current": "color" },
+		"components": ["MbI82TdDE", "VMecBV1adq"]
+	  },
+	  "navigation": {
+		"type": "BlockNavigation",
+		"settings": {
+		  "styles": {
+			"width": "1240px",
+			"padding": "26px 16px",
+			"logo-width": "120px",
+			"m-logo-width": "90px",
+			"oldContentWidth": "1600px",
+			"menu-item-spacing": "30px",
+			"space-between-menu": "30px",
+			"contrastBackgroundColor": "#dbdbdb"
+		  },
+		  "logoUrl": "https://assets.zyrosite.com/_SITE-ASSETS/AGNO6WjppyhpBJM0/Frame%201.svg",
+		  "isSticky": true,
+		  "showLogo": true,
+		  "logoPlacement": "left",
+		  "m-logoPlacement": "left",
+		  "navigationPlacement": "right",
+		  "m-navigationPlacement": "right"
+		},
+		"background": {
+		  "color": "#fefefe",
+		  "current": "color",
+		  "isTransparent": false,
+		  "temporaryBackground": {
+			"color": "#fefefe",
+			"current": "color",
+			"isTransparent": false
+		  }
+		},
+		"components": []
+	  },
+	  "jz-B-RcRx-header": {
+		"type": "BlockBlogHeader",
+		"hidden": false,
+		"settings": {
+		  "styles": {
+			"align": "flex-start",
+			"block-padding": "45px 30px 45px 30px",
+			"content-width": "954px",
+			"m-block-padding": "16px 16px 16px 16px"
+		  },
+		  "shownItems": {
+			"date": true,
+			"avatar": true,
+			"categories": true,
+			"description": true,
+			"minutesToRead": true,
+			"authorFullName": true
+		  }
+		},
+		"background": {},
+		"components": []
+	  },
+	  "I3zQQ2kSK1-header": {
+		"type": "BlockBlogHeader",
+		"hidden": false,
+		"settings": {
+		  "styles": {
+			"align": "flex-start",
+			"block-padding": "45px 30px 45px 30px",
+			"content-width": "954px",
+			"m-block-padding": "16px 16px 16px 16px"
+		  },
+		  "shownItems": {
+			"date": true,
+			"avatar": true,
+			"categories": true,
+			"description": true,
+			"minutesToRead": true,
+			"authorFullName": true
+		  }
+		},
+		"background": {},
+		"components": []
+	  },
+	  "jz-B-RcRx-section": {
+		"type": "BlockGrid",
+		"settings": {
+		  "styles": {
+			"rows": "9",
+			"row-gap": "16px",
+			"row-size": "48px",
+			"column-gap": "24px",
+			"grid-width": "1224px",
+			"column-count": "12",
+			"block-padding": "16px 0",
+			"content-width": "1600px",
+			"content-padding": "16px",
+			"m-block-padding": "56px 16px"
+		  }
+		},
+		"zindexes": ["jz-B-RcRx-section-title"],
+		"background": {},
+		"components": ["jz-B-RcRx-section-title"]
+	  },
+	  "I3zQQ2kSK1-section": {
+		"type": "BlockGrid",
+		"settings": {
+		  "styles": {
+			"rows": "9",
+			"row-gap": "16px",
+			"row-size": "48px",
+			"column-gap": "24px",
+			"grid-width": "1224px",
+			"column-count": "12",
+			"block-padding": "16px 0",
+			"content-width": "1600px",
+			"content-padding": "16px",
+			"m-block-padding": "56px 16px"
+		  }
+		},
+		"zindexes": ["I3zQQ2kSK1-section-title"],
+		"background": {},
+		"components": ["I3zQQ2kSK1-section-title"]
+	  }
+	},
+	"styles": {
+	  "h1": {
+		"color": "var(--colors-dark)",
+		"font-size": "64px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "300",
+		"line-height": "1.24",
+		"m-font-size": "44px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "h2": {
+		"color": "var(--colors-dark)",
+		"font-size": "48px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "300",
+		"line-height": "1.24",
+		"m-font-size": "36px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "h3": {
+		"color": "var(--colors-dark)",
+		"font-size": "40px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "300",
+		"line-height": "1.24",
+		"m-font-size": "32px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "h4": {
+		"color": "var(--colors-dark)",
+		"font-size": "32px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "normal",
+		"line-height": "1.24",
+		"m-font-size": "28px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "h5": {
+		"color": "var(--colors-dark)",
+		"font-size": "24px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "normal",
+		"line-height": "1.24",
+		"m-font-size": "24px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "h6": {
+		"color": "var(--colors-dark)",
+		"font-size": "20px",
+		"font-style": "normal",
+		"font-family": "var(--font-primary)",
+		"font-weight": "normal",
+		"line-height": "1.24",
+		"m-font-size": "20px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "body": {
+		"color": "var(--colors-dark)",
+		"font-size": "16px",
+		"font-style": "normal",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "normal",
+		"line-height": "1.8",
+		"m-font-size": "16px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "font": {
+		"primary": "'Trirong', serif",
+		"secondary": "'Manrope', sans-serif"
+	  },
+	  "colors": {
+		"dark": "#222D2D",
+		"light": "#fff",
+		"danger": "#EA5D5C",
+		"primary": "#44369A",
+		"success": "#4dbd74",
+		"warning": "#ffc107",
+		"accent-1": "#D5D9DE",
+		"accent-2": "#3F2E56",
+		"grey-100": "#cfcfd7",
+		"grey-200": "#c2cfd6",
+		"grey-300": "#c1c1cf",
+		"grey-400": "#9f9fab",
+		"grey-500": "#6d6d83",
+		"grey-600": "#5c6970",
+		"grey-700": "#454f54",
+		"grey-800": "#2e3538",
+		"grey-900": "#2e3538",
+		"secondary": "#97B7E8",
+		"primary-dark": "#433982",
+		"accent-1-dark": "#C9CCD1",
+		"accent-2-dark": "#2D213D",
+		"primary-light": "#5D4FB5",
+		"accent-1-light": "#F4F6F8",
+		"accent-2-light": "#533C70",
+		"primary-accent": "#574AA8",
+		"secondary-dark": "#86A3CF",
+		"accent-1-accent": "E4E7EB",
+		"accent-2-accent": "#493563",
+		"secondary-light": "#A6C9FF",
+		"secondary-accent": "#9FC1F5"
+	  },
+	  "nav-link": {
+		"color": "var(--colors-dark)",
+		"font-size": "14px",
+		"font-style": "normal",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "500",
+		"line-height": "1.2",
+		"m-font-size": "14px",
+		"letter-spacing": "0.01em",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "body-large": {
+		"color": "var(--colors-grey-500)",
+		"font-size": "18px",
+		"font-style": "normal",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "normal",
+		"line-height": "1.8",
+		"m-font-size": "18px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "body-small": {
+		"color": "var(--colors-dark)",
+		"font-size": "14px",
+		"font-style": "normal",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "normal",
+		"line-height": "1.8",
+		"m-font-size": "14px",
+		"letter-spacing": "normal",
+		"text-transform": "none",
+		"text-decoration": "none"
+	  },
+	  "grid-button-primary": {
+		"color": "var(--colors-light)",
+		"font-size": "14px",
+		"padding-x": "32px",
+		"padding-y": "14px",
+		"font-style": "normal",
+		"border-null": "",
+		"color-hover": "var(--colors-light)",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "500",
+		"line-height": "1.2",
+		"m-font-size": "14px",
+		"m-padding-x": "24px",
+		"m-padding-y": "12px",
+		"border-color": "rgba(0, 0, 0, 0)",
+		"border-width": "0",
+		"box-shadow-x": "0px",
+		"box-shadow-y": "0px",
+		"border-radius": "0px",
+		"letter-spacing": "0.02em",
+		"text-transform": "none",
+		"box-shadow-blur": "0px",
+		"box-shadow-null": "",
+		"m-border-radius": "0px",
+		"text-decoration": "none",
+		"background-color": "var(--colors-primary)",
+		"box-shadow-color": "transparent",
+		"border-null-hover": "",
+		"box-shadow-spread": "0px",
+		"border-color-hover": "rgba(0, 0, 0, 0)",
+		"border-width-hover": "0px",
+		"box-shadow-x-hover": "0px",
+		"box-shadow-y-hover": "0px",
+		"transition-duration": "0.2s",
+		"background-color-null": "",
+		"box-shadow-blur-hover": "0px",
+		"box-shadow-null-hover": "",
+		"background-color-hover": "var(--colors-primary-accent)",
+		"box-shadow-color-hover": "0px",
+		"box-shadow-spread-hover": "0px",
+		"transition-timing-function": "ease",
+		"background-color-null-hover": ""
+	  },
+	  "grid-button-secondary": {
+		"color": "var(--colors-dark)",
+		"font-size": "14px",
+		"padding-x": "32px",
+		"padding-y": "14px",
+		"font-style": "normal",
+		"border-null": "",
+		"color-hover": "var(--colors-dark)",
+		"font-family": "var(--font-secondary)",
+		"font-weight": "500",
+		"line-height": "1.2",
+		"m-font-size": "14px",
+		"m-padding-x": "24px",
+		"m-padding-y": "12px",
+		"border-color": "var(--colors-primary)",
+		"border-width": "1px",
+		"box-shadow-x": "0px",
+		"box-shadow-y": "0px",
+		"border-radius": "0px",
+		"letter-spacing": "0.02em",
+		"text-transform": "none",
+		"box-shadow-blur": "0px",
+		"box-shadow-null": "",
+		"m-border-radius": "100px",
+		"text-decoration": "none",
+		"background-color": "var(--colors-light)",
+		"box-shadow-color": "transparent",
+		"border-null-hover": "",
+		"box-shadow-spread": "0px",
+		"border-color-hover": "var(--colors-primary-accent)",
+		"border-width-hover": "0px",
+		"box-shadow-x-hover": "0px",
+		"box-shadow-y-hover": "0px",
+		"transition-duration": "0.2s",
+		"background-color-null": "",
+		"box-shadow-blur-hover": "0px",
+		"box-shadow-null-hover": "",
+		"background-color-hover": "var(--colors-grey-200)",
+		"box-shadow-color-hover": "0px",
+		"box-shadow-spread-hover": "0px",
+		"transition-timing-function": "ease",
+		"background-color-null-hover": ""
+	  }
+	},
+	"components": {
+	  "MbI82TdDE": {
+		"type": "GridTextBox",
+		"content": "<h1 class=\"h-3\" style=\"color: var(--colors-dark);\"><span style=\"color: var(--colors-dark)\">Quality, not quantity<br></span></h1>",
+		"settings": {
+		  "styles": {
+			"text": "center",
+			"align": "flex-start",
+			"justify": "center",
+			"position": "1/3/3/15",
+			"m-element-margin": "0 0 16px 0"
+		  }
+		}
+	  },
+	  "VMecBV1adq": {
+		"type": "GridTextBox",
+		"content": "<p class=\"body\" style=\"color: var(--colors-dark);\">We have made quality our habit. It’s not something that we just strive for – we live by this principle every day. <br style=\"color: var(--colors-dark);\"></p>",
+		"settings": {
+		  "styles": {
+			"text": "center",
+			"align": "flex-start",
+			"justify": "center",
+			"position": "3/6/5/12",
+			"m-element-margin": "0 0 16px 0"
+		  }
+		}
+	  },
+	  "jz-B-RcRx-section-title": {
+		"type": "GridTextBox",
+		"content": "<p class=\"body\">My post content</p>",
+		"settings": {
+		  "styles": {
+			"text": "left",
+			"align": "flex-start",
+			"justify": "flex-start",
+			"position": "2/3/4/15",
+			"m-element-margin": "0 0 16px 0"
+		  }
+		}
+	  },
+	  "I3zQQ2kSK1-section-title": {
+		"type": "GridTextBox",
+		"content": "<p class=\"body\">My post content</p>",
+		"settings": {
+		  "styles": {
+			"text": "left",
+			"align": "flex-start",
+			"justify": "flex-start",
+			"position": "2/3/4/15",
+			"m-element-margin": "0 0 16px 0"
+		  }
+		}
+	  }
+	},
+	"navigation": {
+	  "items": { "home": { "type": "Page", "subItems": [] } },
+	  "hidden": true,
+	  "itemsIds": [],
+	  "hiddenItemsIds": ["home"]
+	},
+	"blogCategories": {},
+	"hasActivePlan": 0,
+	"domain": "perf--blank.zyrosite.com",
+	"user": { "fullName": "Algirdas Tamašauskas" }
+  }
+  

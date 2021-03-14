@@ -2,14 +2,17 @@
     import { setWebsite } from "../stores";
 
     const templates = [
-
+        "./data/perf-blank.json",
+        "./data/perf-images.json",
+        "./data/wells.json",
     ]
 
     const handleButtonClick = async () => {
         if (window) {
-            const res = await fetch("./data/perf--images.json");
+            const template = templates[Math.floor(Math.random() * templates.length)];
+            const res = await fetch(template);
             const websiteData = await res.json();
-            
+
             setWebsite(websiteData);
         }
     } 
