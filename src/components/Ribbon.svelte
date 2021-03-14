@@ -1,4 +1,21 @@
-<a href="https://zyro.com/templates" target="_blank" class="zyro-ribbon">
+<script>
+    import { setWebsite } from "../stores";
+
+    const templates = [
+
+    ]
+
+    const handleButtonClick = async () => {
+        if (window) {
+            const res = await fetch("./data/perf--images.json");
+            const websiteData = await res.json();
+            
+            setWebsite(websiteData);
+        }
+    } 
+</script>
+
+<div class="zyro-ribbon">
     <div class="zyro-ribbon__text-wrapper">
         World's best website, created with
         <svg
@@ -15,7 +32,7 @@
                 fill="white"
             /></svg
         >.
-        <span class="zyro-ribbon__promote-text">Get one for yourself too.</span>
+        <span class="zyro-ribbon__promote-text">Hit shuffle for a new template!</span>
     </div>
-    <button class="zyro-ribbon__button"> Get started </button>
-</a>
+    <button on:click={handleButtonClick} class="zyro-ribbon__button">SHUFFLE!</button>
+</div>
