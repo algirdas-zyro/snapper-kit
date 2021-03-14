@@ -2,8 +2,8 @@
     import { setWebsite } from "../stores";
 
     export async function load(ctx) {
-        // const res = await ctx.fetch("./data.json");
-        const res = await ctx.fetch("./json/perf--images.json");
+        const res = await ctx.fetch("./data.json");
+        // const res = await ctx.fetch("./json/perf--images.json");
         const websiteData = await res.json();
 
         setWebsite(websiteData);
@@ -22,31 +22,18 @@
         websiteFontNames,
     } from '../utils/font';
 
-    $:computedStyle = cssVarsObjectToString($styles ?? {});
-    $:usedFontWeights = pickUsedFontWeights($styles ?? {});
-    $:usedFontNames = websiteFontNames($styles?.font);
+    $:computedStyle = cssVarsObjectToString($styles);
+    $:usedFontWeights = pickUsedFontWeights($styles);
+    $:usedFontNames = websiteFontNames($styles.font);
     $:familyQuery = constructMetaFont(usedFontNames, usedFontWeights);
     $:googleFontHref = `https://fonts.googleapis.com/css?family=${familyQuery}&display=swap`;
 
-    // metaInfo.link.push({
-	// 				rel: 'preconnect',
-	// 				href: 'https://fonts.gstatic.com',
-	// 				crossorigin: true,
-	// 			}, {
-	// 				rel: 'preload',
-	// 				as: 'style',
-	// 				href: this.googleFontHref,
-	// 			}, {
-	// 				rel: 'stylesheet',
-	// 				href: this.googleFontHref,
-	// 				media: 'print',
-	// 				// Only remove media attribute at runtime, not on prerendering. During prerender media stays 'print'
-	// 				onload: "if(!window._isAppPrerendering)this.onload=null;this.removeAttribute('media');",
-	// 			});
 </script>
 
 <svelte:head>
-    <title>Generic title</title>
+    <link rel="preconnect" href='//fonts.gstatic.com' crossorigin>
+    <link rel="preconnect" href='//assets.zyrosite.com' crossorigin>
+    <link rel="preload" as="style" href={googleFontHref}>
     <link rel="stylesheet" href={googleFontHref} media="print" onload="if(!window._isAppPrerendering)this.onload=null;this.removeAttribute('media')">
 </svelte:head>
 
