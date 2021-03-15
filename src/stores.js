@@ -2,14 +2,6 @@ import { writable, derived } from "svelte/store";
 
 export const website = writable({});
 
-export const NAV_LINK_TYPE = "Link";
-export const NAV_PAGE_TYPE = "Page";
-export const NAV_FOLDER_TYPE = "Folder";
-export const NAV_HOMEPAGE_TYPE = "Homepage";
-
-export const NAV_GROUP_ROOT = "ROOT";
-export const NAV_GROUP_HIDDEN = "HIDDEN";
-
 export const pages = derived(website, w => w.pages);
 export const blocks = derived(website, w => w.blocks);
 export const components = derived(website, w => w.components);

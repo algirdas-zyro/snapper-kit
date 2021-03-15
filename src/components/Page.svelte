@@ -1,5 +1,5 @@
 <script>
-    import { pages, blocks, components, styles } from "../stores";
+    import { pages, blocks, components } from "../stores";
     import { cssVarsObjectToString } from "../utils/objectToCSSVars";
     import { getGridItemSize } from "../utils/getGridItemSize";
     import Grid from "./Grid.svelte";
